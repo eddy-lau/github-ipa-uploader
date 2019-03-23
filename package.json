@@ -1,0 +1,17 @@
+{
+  "name": "github-ipa-uploader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "github-ipa-uploader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eddie Lau",
+  "license": "ISC",
+  "dependencies": {
+    "cli-progress": "^2.1.1",
+    "ipa-extract-info": "^1.2.5",
+    "ipa-metadata2": "^1.4.2",
+    "publish-release": "^1.6.0"
+  }
+}
