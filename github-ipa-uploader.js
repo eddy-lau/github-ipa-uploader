@@ -155,19 +155,22 @@ function main(options) {
   .then( result => {
 
     assets = result;
-    //return publishToGithub(opts, assets);
+    return publishToGithub(opts, assets);
 
   }).then( release => {
 
+    var plist;
     assets.filter( asset => {
       return asset.endsWith('.plist');
     }).forEach( asset => {
+      plist = path.basename(asset);
       fs.unlinkSync(asset);
     });
 
     return {
       version: opts.version,
       buildNumber: opts.buildNumber,
+      plist: plist,
       release: release
     };
 
