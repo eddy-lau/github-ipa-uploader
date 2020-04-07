@@ -12,6 +12,6 @@
     "cli-progress": "^2.1.1",
     "ipa-extract-info": "^1.2.5",
     "ipa-metadata2": "^1.4.2",
-    "publish-release": "^1.6.0"
+    "publish-release": "^1.6.1"
   }
 }
