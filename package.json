@@ -9,9 +9,10 @@
   "author": "Eddie Lau",
   "license": "ISC",
   "dependencies": {
+    "async": "^3.2.0",
     "cli-progress": "^2.1.1",
     "ipa-extract-info": "^1.2.5",
-    "ipa-metadata2": "^1.4.2",
+    "ipa-metadata2": "link:../ipa-metadata2",
     "publish-release": "^1.6.1"
   }
 }
