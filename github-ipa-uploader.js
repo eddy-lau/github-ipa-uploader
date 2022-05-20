@@ -18,7 +18,7 @@ function getIPAMetadata(ipaFilePath) {
       } else {
         resolve(data);
       }
-    });
+    }, false);
 
   });
 
