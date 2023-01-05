@@ -9,7 +9,7 @@
   "author": "Eddie Lau",
   "license": "ISC",
   "dependencies": {
-    "async": "^3.2.0",
+    "async": "^3.2.2",
     "cli-progress": "^2.1.1",
     "ipa-extract-info": "^1.2.5",
     "ipa-metadata2": "https://github.com/eddy-lau/ipa-metadata2",
