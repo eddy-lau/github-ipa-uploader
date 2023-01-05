@@ -117,6 +117,7 @@ function buildManifest(opts, metadata, ipaFileName, iconURL) {
 function getAssets(opts) {
 
   var promises = [];
+  let tagDelimiter = opts.tagDelimiter || '_';
 
   opts.binaries.forEach( binary => {
 
@@ -131,7 +132,7 @@ function getAssets(opts) {
           opts.version = opts.version || data.metadata.CFBundleShortVersionString;
           opts.buildNumber = opts.buildNumber || data.metadata.CFBundleVersion;
           var binaryFileName = path.basename(binary.path);
-          opts.tag = opts.tag || [opts.tagPrefix, opts.version, opts.buildNumber].join('_');
+          opts.tag = opts.tag || [opts.tagPrefix, opts.version, opts.buildNumber].join(tagDelimiter);
           return buildManifest(opts, data.metadata, binaryFileName, binary.iconURL);
 
         });
